@@ -17,4 +17,4 @@ jobs:
           PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME }}
           PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD }}        
     - name: Build and deploy with Maven
-      run: mvn clean deploy -DmuleDeploy -B package --file pom.xml -s .maven/settings.xml
+      run: mvn clean deploy -DmuleDeploy -Denv.PLATFORM_USERNAME=maamar2023 -Denv.PLATFORM_PASSWORD=maa@Mar2023 -B package --file pom.xml -s .maven/settings.xml
