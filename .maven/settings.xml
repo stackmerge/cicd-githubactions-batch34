@@ -1,0 +1,14 @@
+<settings>
+	<servers>
+    <server>
+      <id>anypoint-connectedapp</id>
+      <username>~~~Client~~~</username>
+      <password>0d354728c7944a9dbb3fcdbbecebbcdd~?~5A588224BFDB41b28A2Eb948d39E8a00</password>
+    </server>
+	<server>
+	    <id>anypoint-credentials</id>
+		<username>maamar2023</username>
+		<password>maa@Mar2023</password>
+    </server>	
+	</servers>
+</settings>

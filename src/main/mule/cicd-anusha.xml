@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="6dbae5a9-81a6-407c-8ca6-28f5ad6352d3" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="cicd-anushaFlow" doc:id="4394f510-cdfa-4771-abdf-cfb75ee2d347" >
+		<http:listener doc:name="Listener" doc:id="8dc39874-4935-423f-bd76-8119e19c4718" config-ref="HTTP_Listener_config" path="/cicd"/>
+		<set-payload value="Hello World!!!" doc:name="Hello World!!!" doc:id="eb7efbe6-0d29-4b51-96c8-1fc7977c03e5" />
+	</flow>
+</mule>
